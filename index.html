@@ -818,7 +818,7 @@
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+					<div class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -842,11 +842,11 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" onClick="sendMessage()" value="Send Message" class="btn btn-primary py-3 px-5">
+									<button onclick="sendMessage()" class="btn btn-primary py-3 px-5">Send Message</button>
 								</div>
 							</div>
 						</div>
-					</form>
+					</div>
 					
 				</div>
 
@@ -974,8 +974,7 @@
 
 		<script>
 
-			function sendMessage(e) {
-			
+			function sendMessage() {
 				Swal.fire({
         			icon: 'success',
         			title: 'Success',
