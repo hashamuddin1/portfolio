@@ -19,6 +19,7 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	
@@ -841,7 +842,7 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+									<input type="submit" onClick="sendMessage()" value="Send Message" class="btn btn-primary py-3 px-5">
 								</div>
 							</div>
 						</div>
@@ -970,6 +971,19 @@
 		<script src="js/google-map.js"></script>
 		
 		<script src="js/main.js"></script>
+
+		<script>
+
+			function sendMessage(e) {
+			
+				Swal.fire({
+        			icon: 'success',
+        			title: 'Success',
+        			text: 'Form submitted successfully!',
+    			});
+
+			}
+			</script>
 		
 	</body>
 	</html>
